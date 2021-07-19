@@ -14,7 +14,7 @@
 
 <button onclick="myFunction('main')" style="background-color: #4CAF50; color:white; border-radius:10px;">Next</button>
 
-<div id="main" style="display:none;">
+<span id="main" style="display:none;">
 ## Et tu?
 
 Supposedly, Caesar (yes, that Caesar) used to "encrypt" (i.e., conceal in a reversible way) confidential messages by shifting each letter therein by some number of places. For instance, he might write A as B, B as C, C as D, ..., and, wrapping around alphabetically, Z as A. And so, to say HELLO to someone, Caesar might write IFMMP. Upon receiving such messages from Caesar, recipients would have to "decrypt" them by shifting letters in the opposite direction by the same number of places.
@@ -195,4 +195,4 @@ Execute the below, logging in with your GitHub username and password when prompt
 ```
 submit50 cs50/problems/2019/ap/caesar
 ```
-</div>
+</span>
