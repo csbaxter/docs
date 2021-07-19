@@ -17,7 +17,6 @@
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.0.0/build.css" rel="stylesheet">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
         <!-- https://www.bryanbraun.com/anchorjs/ -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js"></script>
