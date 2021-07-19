@@ -7,7 +7,6 @@
     x.style.display = "none";
   }
 }
-  
 </script>
 # Caesar
 
