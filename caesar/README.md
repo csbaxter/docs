@@ -73,9 +73,9 @@ How to begin? Let's approach this problem one step at a time.
 
 ## Pseudocode
 
-First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Recall how we wrote pseudocode for [finding Mike Smith](https://cdn.cs50.net/2018/fall/lectures/0/lecture0.pdf). Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
+First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice.
 
-There's more than one way to do this, so here's just one!
+There's more than one way to write pseudotext, so here's just one!
 
 1. Check that program was run with one command-line argument
 2. Convert that command-line argument from a `string` to an `int`
