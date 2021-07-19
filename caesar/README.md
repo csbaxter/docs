@@ -8,7 +8,6 @@
   }
 }
   
-document.getElementById('main').style.display = "none"
 </script>
 # Caesar
 
@@ -198,3 +197,6 @@ Execute the below, logging in with your GitHub username and password when prompt
 submit50 cs50/problems/2019/ap/caesar
 ```
 </p>
+<script>
+  document.getElementById('main').style.display = "none";
+  </script>
