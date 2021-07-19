@@ -166,7 +166,7 @@ Now it's time to tie everything together! Instead of shifting the characters by 
 ### Correctness
 
 ```
-check50 cs50/problems/2019/ap/caesar
+check50 csbaxter/problems/2021/x/caesar
 ```
 
 ### Style
@@ -180,5 +180,5 @@ style50 caesar.c
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/problems/2019/ap/caesar
+submit50 csbaxter/problems/2021/x/caesar
 ```
