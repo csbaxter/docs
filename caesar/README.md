@@ -1,4 +1,5 @@
-function myFunction(divName) {
+<script>
+  function myFunction(divName) {
   var x = document.getElementById(divName);
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -6,6 +7,7 @@ function myFunction(divName) {
     x.style.display = "none";
   }
 }
+</script>
 # Caesar
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8P1wHDc0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
