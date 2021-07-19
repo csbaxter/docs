@@ -12,9 +12,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8P1wHDc0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<button onclick="myFunction('myDIV')" style="background-color: #4CAF50; color:white; border-radius:10px;">N</button>
-
-  This is my DIV element.
+<button onclick="myFunction('main')" style="background-color: #4CAF50; color:white; border-radius:10px;">Next</button>
 
 <div id="main" style="display:none;">
 ## Et tu?
