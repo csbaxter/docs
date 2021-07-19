@@ -1,8 +1,6 @@
 # Caesar
 
-{% video https://www.youtube.com/watch?v=Rg8P1wHDc0s %}
-
-{% next %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8P1wHDc0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Et tu?
 
@@ -53,11 +51,7 @@ plaintext:  be sure to drink your Ovaltine
 ciphertext: or fher gb qevax lbhe Binygvar
 ```
 
-{% spoiler "Why?" %}
-
-{% video https://www.youtube.com/watch?v=9K4FsAHB-C8 %}
-
-{% endspoiler %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9K4FsAHB-C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Notice that the case of the original message has been preserved. Lowercase letters remain lowercase, and uppercase letters remain uppercase.
 
@@ -77,13 +71,9 @@ Usage: ./caesar key
 
 How to begin? Let's approach this problem one step at a time.
 
-{% next %}
-
 ## Pseudocode
 
 First, write in `pseudocode.txt` at right some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice. Recall how we wrote pseudocode for [finding Mike Smith](https://cdn.cs50.net/2018/fall/lectures/0/lecture0.pdf). Odds are your pseudocode will use (or imply using!) one or more functions, conditions, Boolean expressions, loops, and/or variables.
-
-{% spoiler %}
 
 There's more than one way to do this, so here's just one!
 
@@ -97,10 +87,6 @@ There's more than one way to do this, so here's just one!
 5. Print a newline
 
 It's okay to edit your own after seeing this pseudocode here, but don't simply copy/paste ours into your own!
-
-{% endspoiler %}
-
-{% next %}
 
 ## Counting Command-Line Arguments
 
@@ -127,16 +113,11 @@ $ ./caesar 1 2 3
 Usage: ./caesar key
 ```
 
-{% spoiler "Hints" %}
-
 * Recall that you can compile your program with `make`.
 * Recall that you can print with `printf`.
 * Recall that `argc` and `argv` give you information about what was provided at the command line.
 * Recall that the name of the program itself (here, `./caesar`) is in `argv[0]`.
 
-{% endspoiler %}
-
-{% next %}
 
 ## Accessing the Key
 
@@ -144,18 +125,12 @@ Now that your program is (hopefully!) accepting input as prescribed, it's time f
 
 You can assume that, if a user does provide a command-line argument, it will be a non-negative integer (e.g., 1). No need to check that it’s indeed numeric. But remember, you should convert that string (recall that `argv` is an array of strings, even if those strings happen to look like numbers) to an actual integer. There is a function you've used before (remember `atoi`?) that can do this for you!
 
-{% spoiler "Hints" %}
-
 * Recall that `argc` and `argv` give you information about what was provided at the command line.
 * Recall that `argv` is an array of strings.
 * Recall that computer scientists like counting starting from 0.
 * Recall that we can access individual elements of an array, such as `argv` using square brackets, for example: `argv[0]`.
 * Recall that the `atoi` function converts a string that looks like a number into that number.
 
-
-{% endspoiler %}
-
-{% next %}
 
 ## Peeking Underneath the Hood
 
@@ -169,20 +144,14 @@ plaintext:  hello
 ciphertext: ifmmp
 ```
 
-{% spoiler "Hints" %}
-
 * Try to iterate over every character in the plaintext and literally add 1 to it, then print it.
 * If `c` is a variable of type `char` in C, what happens when you call `printf("%c", c + 1)`?
 
-{% endspoiler %}
-
-{% next %}
 
 ## Your Turn
 
 Now it's time to tie everything together! Instead of shifting the characters by 1, modify `caesar.c` to instead shift them by the actual key value. And be sure to preserve case! Uppercase letters should stay uppercase, lowercase letters should stay lowercase, and characters that aren't alphabetical should remain unchanged.
 
-{% spoiler "Hints" %}
 
 * Best to use the modulo (i.e., remainder) operator, `%`, to handle wraparound from Z to A! But how?
 * Things get weird if we try to wrap `Z` or `z` by 1 using the technique in the previous section.
@@ -191,9 +160,6 @@ Now it's time to tie everything together! Instead of shifting the characters by 
 * Recall that the ASCII value of `A` is 65. The ASCII value of `a`, meanwhile, is 97.
 * If you're not seeing any output at all when you call `printf`, odds are it's because you're printing characters outside of the valid ASCII range from 0 to 127. Try printing characters as numbers (using `%i` instead of `%c`) at first to see what values you're printing, and make sure you're only ever trying to print valid characters!
 
-{% endspoiler %}
-
-{% next %}
 
 ## Testing
 
