@@ -9,7 +9,7 @@ Ths goal of this assignment is to use Scratch to create a screen saver similar t
 
 <p>Your job is to observe the animation below and reverse engineer what you see. </p> 
 
-<img src="http://csbaxter.github.io/web/screensaver/bounce.gif" />
+<img src="http://csbaxter.github.io/docs/screensaver/bounce.gif" />
 
 <p>The requirements for your screen saver are the following:</p>
 <ol>
