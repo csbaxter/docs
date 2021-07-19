@@ -71,10 +71,12 @@ Usage: ./caesar key
 
 To try out the staff’s implementation of this problem, execute
 
+```
 ./caesar key
-substituting a valid integer in place of key, within this sandbox.
+substituting a valid integer in place of key, within this <a href="http://bit.ly/2Vwi8n0" target=_blank>sandbox</a>.
+```
 
-Specification
+## Specification
 Design and implement a program, caesar, that encrypts messages using Caesar’s cipher.
 
 <ul>
