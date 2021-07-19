@@ -12,8 +12,8 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rg8P1wHDc0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<button onclick="myFunction('myDIV')">Click Me</button>
-<div id="myDIV" style="background-color: #4CAF50; color:white;display:none;">
+<button onclick="myFunction('myDIV')" style="background-color: #4CAF50; color:white; border-radius:10px;">Click Me</button>
+<div id="myDIV" style="display:none;">
   This is my DIV element.
 </div>
 
