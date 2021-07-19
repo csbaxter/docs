@@ -200,4 +200,4 @@ submit50 cs50/problems/2019/ap/caesar
 <script>
   setTimeout('', 5000);
   document.getElementById('main').style.display = "none";
-  </script>
+</script>
