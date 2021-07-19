@@ -197,6 +197,5 @@ submit50 cs50/problems/2019/ap/caesar
 ```
 </span>
 <script>
-  setTimeout('', 5000);
   document.getElementById('main').style.display = "none";
 </script>
