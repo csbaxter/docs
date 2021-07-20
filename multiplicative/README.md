@@ -18,7 +18,7 @@ Here's how that would look encrypting the entire English alphabet:
 
 <img src="affine-cipher.jpg" />
 
-Notice how the original value of letters is assigned, we say A = 0, B = 1, C = 3 and so on.  You will need to keep this in mind when implementing your program, because by default the ASCII value for A = 65 and a = 97 🤔
+Notice how the original value of letters is assigned, we say A = 0, B = 1, C = 2 and so on.  You will need to keep this in mind when implementing your program, because by default the ASCII value for A = 65 and a = 97 🤔
 
 Let's write a program called `affine` that enables you to encrypt messages using the Affine cipher. When the user executes the program you should first prompt them to input a positive integer value for `a` and an integer value for `b`.  If the user inputs 0 or a negative number, reject it and continue to prompt them for a number. Next the user should be prompted for the phrase they want to encrypt, which can include any combination of letters, numbers, punctuation and whitespace.
 
