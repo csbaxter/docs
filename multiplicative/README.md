@@ -6,40 +6,56 @@ There are various methods for encrypting text, your task in this assignment will
 
 Cipher Letter = (a * Plain Text Letter + b) mod m
 
-Since we have 26 letters in the English alphabet, the m will always be 26, and it simply means "the remainder when dividing by 26".  You (the person enciphering the text) choose the value of a and b.  For example, you could choose a = 5 and b = 8 and your formula for each letter would be:
+or more formally
 
-Cipher Letter = (5 * Plain Text Letter + 8) mod 26
+c<sub>i</sub> = (a * p<sub>i</sub> + b) mod m
+
+Since we have 26 letters in the English alphabet, the m will always be 26, and it simply means "the remainder when dividing by 26".  You (the person enciphering the text) choose the value of the keys a and b.  For example, you could choose a = 5 and b = 8 and your formula for each letter would be:
+
+c<sub>i</sub> = (5 * p<sub>i</sub> + 8) mod 26
 
 Here's how that would look encrypting the entire English alphabet:
 
 
 
-Let's write a program called `affine` that enables you to encrypt messages using the Affine cipher. When the user executes the program you should first prompt them to input an integer value for `a` and an integer value for `b`.  Next the user should be prompted for the phrase they want to encrypt.
+Let's write a program called `affine` that enables you to encrypt messages using the Affine cipher. When the user executes the program you should first prompt them to input a positive integer value for `a` and an integer value for `b`.  If the user inputs 0 or a negative number, reject it and continue to prompt them for a number. Next the user should be prompted for the phrase they want to encrypt, which can include any combination of letters, numbers, punctuation and whitespace.
 
-Here are a few examples of how the program might work. For example, if the user inputs a `1` and a plaintext of `HELLO`:
+Here are a few examples of how the program might work. For example, if the user inputs `a` = 5, `b` = 8 and a plaintext of `HELLO`:
+
+| plaintext    | H    | E    | L    | L    | O    |
+| ------------ | ---- | ---- | ---- | ---- | ---- |
+|   a = 5      | 1    | 1    | 1    | 1    | 1    |
+|   b = 8      |      |      |      |      |      |
+| = ciphertext | R    | C    | L    | L    | A    |
 
 ```
-$ ./caesar 1 2
+$ ./affine
+a:5
+b:8
 plaintext:  HELLO
-ciphertext: IFMMP
+ciphertext: RCLLA
 ```
 
-Here's how the program might work if the user provides a key of `13` and a plaintext of `hello, world`:
+Here's how the program might work if the user provides a key of `a` = 9, `b` = 2  and a plaintext of `hello, world`:
 
 ```
-$ ./caesar 13
+$ ./affine
+a:9
+b:2
 plaintext:  hello, world
-ciphertext: uryyb, jbeyq
+ciphertext: nmxxy, syzxd
 ```
 
 Notice that neither the comma nor the space were changed by the cipher. Only encrypt alphabetical characters!
 
-How about one more? Here's how the program might work if the user provides a key of `13` again, with a more complex plaintext:
+How about one more? Here's how the program might work if the user provides a key of `a` = 7, `b` = 3, with a more complex plaintext:
 
 ```
-$ ./caesar 13
+$ ./affine
+a:7
+b:3
 plaintext:  be sure to drink your Ovaltine
-ciphertext: or fher gb qevax lbhe Binygvar
+ciphertext: kf znsf gx yshqv pxns Xudcghqf
 ```
 
 Notice that the case of the original message has been preserved. Lowercase letters remain lowercase, and uppercase letters remain uppercase.
@@ -49,10 +65,10 @@ Design and implement a program, affine, that encrypts messages using the Affine 
 
 <ul>
    <li>Implement your program in a file called affine.c in a directory called affine.</li>
-<li>You need to prompt the user to input an integer value for key `a` (the multiplier) and an integer value for key `b` (the addition shift), but you don’t need to worry if your program eventually breaks if the user chooses an integer value that’s too big or almost too big to fit in an int. (Recall that an int can overflow.)
+<li>You need to prompt the user to input an integer value for coefficient `a` (the multiplier) and an integer value for coefficient `b` (the addition shift), but you don’t need to worry if your program eventually breaks if the user chooses an integer value that’s too big or almost too big to fit in an int. (Recall that an int can overflow.)
 <li>Your program must output plaintext: (without a newline) and then prompt the user for a string of plaintext (using get_string).</li>
-<li>Your program must output ciphertext: (without a newline) followed by the plaintext’s corresponding ciphertext, with each alphabetical character in the plaintext “rotated” by k positions; non-alphabetical characters should be outputted unchanged.</li>
-<li>Your program must preserve case: capitalized letters, though rotated, must remain capitalized letters; lowercase letters, though rotated, must remain lowercase letters.</li>
+<li>Your program must output ciphertext: (without a newline) followed by the plaintext’s corresponding ciphertext, with each alphabetical character changed to its encrypted value by way of the affine cipher formula; non-alphabetical characters should be outputted unchanged.</li>
+<li>Your program must preserve case: capitalized letters, though changed, must remain capitalized letters; lowercase letters, though changed, must remain lowercase letters.</li>
 <li>After outputting ciphertext, you should print a newline. Your program should then exit by returning 0 from main.</li>
  </ul>
 How to begin? Let’s approach this problem one step at a time.
