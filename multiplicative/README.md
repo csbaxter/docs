@@ -16,7 +16,7 @@ c<sub>i</sub> = (5 * p<sub>i</sub> + 8) mod 26
 
 Here's how that would look encrypting the entire English alphabet:
 
-
+<img src="affine-cipher.jpg" />
 
 Let's write a program called `affine` that enables you to encrypt messages using the Affine cipher. When the user executes the program you should first prompt them to input a positive integer value for `a` and an integer value for `b`.  If the user inputs 0 or a negative number, reject it and continue to prompt them for a number. Next the user should be prompted for the phrase they want to encrypt, which can include any combination of letters, numbers, punctuation and whitespace.
 
