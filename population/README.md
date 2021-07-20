@@ -1,8 +1,6 @@
-# Lab 1: Population Growth
+# Llama Population Growth
 
-You are welcome to collaborate with one or two classmates on this lab, though it is expected that every student in any such group contribute equally to the lab.
-
-Determine how long it takes for a population to reach a particular size.
+Determine how long it takes for a population of llamas to reach a particular size.
 
 ```
 $ ./population
@@ -19,13 +17,9 @@ For example, if we were to start with `n = 1200` llamas, then in the first year,
 
 To try another example, if we were to start with `n = 1000` llamas, at the end of the year, we would have `1000 / 3 = 333.33` new llamas. We can’t have a decimal portion of a llama, though, so we’ll truncate the decimal to get `333` new llamas born. `1000 / 4 = 250` llamas will pass away, so we’ll end up with a total of `1000 + 333 - 250 = 1083` llamas at the end of the year.
 
-
-
 ## Getting Started
 
 - Copy the “distribution code” (i.e., starter code) from [cdn.cs50.net/2020/fall/labs/1/population.c](https://cdn.cs50.net/2020/fall/labs/1/population.c) into a new file in your IDE called `population.c`.
-
-
 
 ## Implementation Details
 
@@ -42,8 +36,6 @@ Complete the implementation of `population.c`, such that it calculates the numbe
 ### Walkthrough
 
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/dZmtRHHUB1M" scrolling="no" id="iFrameResizer0" style="box-sizing: border-box; word-break: break-word; border: 1px solid rgb(222, 226, 230) !important; display: block; height: 553px; margin-bottom: 1rem; min-width: 100%; width: 1px; background-color: rgb(0, 0, 0); color: rgb(33, 37, 41); font-family: &quot;PT Sans&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow: hidden;"></iframe>
-
-
 
 ### Hints
 
