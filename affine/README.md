@@ -26,7 +26,7 @@ Here are a few examples of how the program might work. For example, if the user 
 
 | plaintext    | H    | E    | L    | L    | O    |
 | ------------ | ---- | ---- | ---- | ---- | ---- |
-|   a = 5      | 1    | 1    | 1    | 1    | 1    |
+|   a = 5      |      |      |      |      |      |
 |   b = 8      |      |      |      |      |      |
 | = ciphertext | R    | C    | L    | L    | A    |
 
