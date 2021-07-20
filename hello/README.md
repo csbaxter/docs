@@ -1,17 +1,42 @@
 # Hello
 
-## tl;dr
+## Getting Started
 
-Implement a program that prints out a simple greeting to the user, per the below.
+Head to <a href="http://ide.cs50.io" target=_blank>ide.cs50.io</a> and click “Log in” to access your CS50 IDE. Once your IDE loads, you should see that (by default) it’s divided into three parts. Toward the top of CS50 IDE is your “text editor”, where you’ll write all of your programs. Toward the bottom of is a “terminal window” (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace’s files and directories, compile code, run programs, and even install new software. And on the left is your “file browser”, which shows you all of the files and folders currently in your IDE.
 
+Start by clicking inside your terminal window. You should find that its “prompt” resembles the below.
 ```
-$ ./hello
-hello, world
+~/ $
 ```
+Click inside of that terminal window and then type
+```
+mkdir ~/pset1/
+```
+followed by Enter in order to make a directory (i.e., folder) called `pset1` inside of your home directory. Take care not to overlook the space between `mkdir` and `~/pset1` or any other character for that matter! Keep in mind that `~` always denotes your home directory and `~/pset1` denotes a directory called `pset1`, which is inside of `~`.
 
-## Specification
+Here on out, to execute (i.e., run) a command means to type it into a terminal window and then hit Enter. Commands are “case-sensitive,” so be sure not to type in uppercase when you mean lowercase or vice versa.
 
-Shall we have you write your first program? Inside of your **pset1** folder, create a new folder called **hello**. Then create a new file and immediately save it as **hello.c** inside of your **hello** folder (which should be inside of your **pset1** folder). Be sure to name the file just as we have, in all lowercase; files' and folders' names in Linux are "case-sensitive." Proceed to write your first program by typing precisely these lines into the file:
+Now execute
+```
+cd ~/pset1/
+```
+to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
+```
+~/pset1/ $
+```
+If not, retrace your steps and see if you can determine where you went wrong.
+
+Now execute
+```
+mkdir ~/pset1/hello
+```
+to create a new directory called `hello` inside of your `pset1` directory. Then execute
+```
+cd ~/pset1/hello
+```
+to move yourself into that directory.
+
+Shall we have you write your first program? From the File menu, click New File, and save it (as via the Save option in the File menu) as `hello.c` inside of your `~/pset1/hello` directory. Proceed to write your first program by typing precisely these lines into the file:
 
 ```
 #include <stdio.h>
