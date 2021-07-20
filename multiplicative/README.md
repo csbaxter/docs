@@ -4,11 +4,11 @@ Unencrypted text is generally called _plaintext_. Encrypted text is generally ca
 
 There are various methods for encrypting text, your task in this assignment will be to use an Affine cipher which is defined as follows:
 
-`Cipher Letter = (a * Plain Text Letter + b) mod m`
+Cipher Letter = (a * Plain Text Letter + b) mod m
 
 <i>or more formally</i>
 
-`c<sub>i</sub> = (a * p<sub>i</sub> + b) mod m`
+c<sub>i</sub> = (a * p<sub>i</sub> + b) mod m
 
 Since we have 26 letters in the English alphabet, the m will always be 26, and it simply means "the remainder when dividing by 26".  You (the person enciphering the text) choose the value of the keys a and b.  For example, you could choose a = 5 and b = 8 and your formula for each letter would be:
 
