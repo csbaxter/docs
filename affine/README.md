@@ -6,7 +6,7 @@ There are various methods for encrypting text, your task in this assignment will
 
 Cipher Letter = (a * Plain Text Letter + b) mod m
 
-<i>or more formally</i>
+<i>or more formally, given an array of characters of length i:</i>
 
 c<sub>i</sub> = (a * p<sub>i</sub> + b) mod m
 
