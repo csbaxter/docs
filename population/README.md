@@ -35,7 +35,7 @@ Complete the implementation of `population.c`, such that it calculates the numbe
 
 ### Walkthrough
 
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/dZmtRHHUB1M" scrolling="no" id="iFrameResizer0" style="box-sizing: border-box; word-break: break-word; border: 1px solid rgb(222, 226, 230) !important; display: block; height: 553px; margin-bottom: 1rem; min-width: 100%; width: 1px; background-color: rgb(0, 0, 0); color: rgb(33, 37, 41); font-family: &quot;PT Sans&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow: hidden;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dZmtRHHUB1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Hints
 
