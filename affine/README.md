@@ -128,4 +128,4 @@ One more thing!  In order to be able to decrypt an affine ciphered text, the `a`
 
  D(x)=a<sup>-1</sup>(x-b) mod m
  
-As a bonus, implement your program so that it checks that the value of `a` that the user inputs is not coprime to `m`.  Meaning, check that the Greatest Common Factor (GCF) of  `a` and `m` is 1, if it is not reprompt the user for a new value of `a` that is coprime to `m`.
+As a bonus, implement your program so that it checks that the value of `a` that the user inputs is coprime to `m`.  Meaning, check that the Greatest Common Factor (GCF) of  `a` and `m` is 1, if it is not reprompt the user for a new value of `a` that is coprime to `m`.
