@@ -4,11 +4,11 @@ Unencrypted text is generally called _plaintext_. Encrypted text is generally ca
 
 There are various methods for encrypting text, your task in this assignment will be to use an Affine cipher which is defined as follows:
 
-Cipher Letter = (a * Plain Text Letter + b) mod m
+`Cipher Letter = (a * Plain Text Letter + b) mod m`
 
-or more formally
+<i>or more formally</i>
 
-c<sub>i</sub> = (a * p<sub>i</sub> + b) mod m
+`c<sub>i</sub> = (a * p<sub>i</sub> + b) mod m`
 
 Since we have 26 letters in the English alphabet, the m will always be 26, and it simply means "the remainder when dividing by 26".  You (the person enciphering the text) choose the value of the keys a and b.  For example, you could choose a = 5 and b = 8 and your formula for each letter would be:
 
@@ -75,7 +75,7 @@ How to begin? Let’s approach this problem one step at a time.
 
 ## Pseudocode
 
-First, write in `pseudocode.txt` some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice.
+First, within the affine directory create a file `pseudocode.txt` and write some pseudocode that implements this program, even if not (yet!) sure how to write it in code. There's no one right way to write pseudocode, but short English sentences suffice.
 
 There's more than one way to write pseudotext, so here's just one!
 
@@ -90,47 +90,26 @@ There's more than one way to write pseudotext, so here's just one!
 
 It's okay to edit your own after seeing this pseudocode here, but don't simply copy/paste this into your own!
 
-## Peeking Underneath the Hood
-
-As human beings it's easy for us to intuitively understand the formula described above, inasmuch as we can say "H + 1 = I". But can a computer understand that same logic? Let's find out. For now, we're going to temporarily ignore the key the user provided and instead prompt the user for a secret message and attempt to shift all of its characters by just 1.
-
-Extend the functionality of `caesar.c` at right such that, after accessing the key, we prompt the user for a string and then shift all of its characters by 1, printing out the result. We can also at this point probably remove the line of code we wrote earlier that prints `Success`. All told, this might result in this behavior:
-
-```
-$ ./caesar 1
-plaintext:  hello
-ciphertext: ifmmp
-```
-
-* Try to iterate over every character in the plaintext and literally add 1 to it, then print it.
-* If `c` is a variable of type `char` in C, what happens when you call `printf("%c", c + 1)`?
-
-
 ## Your Turn
 
-Now it's time to tie everything together! Instead of shifting the characters by 1, modify `caesar.c` to instead shift them by the actual key value. And be sure to preserve case! Uppercase letters should stay uppercase, lowercase letters should stay lowercase, and characters that aren't alphabetical should remain unchanged.
+Things to keep in mind:
 
-
-* Best to use the modulo (i.e., remainder) operator, `%`, to handle wraparound from Z to A! But how?
-* Things get weird if we try to wrap `Z` or `z` by 1 using the technique in the previous section.
-* Things get weird also if we try to wrap punctuation marks using that technique.
 * Recall that ASCII maps all printable characters to numbers.
-* Recall that the ASCII value of `A` is 65. The ASCII value of `a`, meanwhile, is 97.
+* Recall that the ASCII value of `A` is 65. The ASCII value of `a`, meanwhile, is 97.  We need 'A' and 'a' to be zero, 'B' and 'b' to be 1 according to our affine formula.
 * If you're not seeing any output at all when you call `printf`, odds are it's because you're printing characters outside of the valid ASCII range from 0 to 127. Try printing characters as numbers (using `%i` instead of `%c`) at first to see what values you're printing, and make sure you're only ever trying to print valid characters!
-
 
 ## Testing
 
 ### Correctness
 
 ```
-check50 csbaxter/problems/2021/x/caesar
+check50 csbaxter/problems/2021/x/affine
 ```
 
 ### Style
 
 ```
-style50 caesar.c
+style50 affine.c
 ```
 
 ## How to Submit
@@ -138,5 +117,5 @@ style50 caesar.c
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 csbaxter/problems/2021/x/caesar
+submit50 csbaxter/problems/2021/x/affine
 ```
