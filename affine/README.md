@@ -124,7 +124,7 @@ submit50 csbaxter/problems/2021/x/affine
 
 ## Bonus (not required)
 
-One more thing!  In order to be able to decrypt an affine ciphered text, the `a` and `m` (26) need to be coprime, meaning the largest common factor of those two values is 1.  Therefore, you must choose a number such as `a` = 3, `a` = 5, `a` = 7 and not a number like `a` = 2 (because 2 is a factor of 2 and 26) or `a` = 13  (because 13 is a factor of 13 and 26).  If `a` and `m` are not coprime, then the decryption function below will not work and your message recipient will be left scratching their head:
+One more thing!  In order to be able to decrypt an affine ciphered text, the `a` and `m` (26) need to be coprime, meaning the largest common factor of those two values is 1.  Therefore, you must choose a number such as `a` = 3, `a` = 5, `a` = 7 and not a number like `a` = 28 (because 2 is a GCF of 28 and 26) or `a` = 13  (because 13 is a factor of 13 and 26).  If `a` and `m` are not coprime, then the decryption function below will not work and your message recipient will be left scratching their head:
 
  D(x)=a<sup>-1</sup>(x-b) mod m
  
