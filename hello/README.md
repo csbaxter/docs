@@ -2,6 +2,10 @@
 
 ## Getting Started
 
+CS50 IDE is a web-based “integrated development environment” that allows you to program “in the cloud,” without installing any software locally. Indeed, CS50 IDE provides you with your very own “workspace” (i.e., storage space) in which you can save your own files and folders (aka directories).
+
+### Logging In
+
 Head to <a href="http://ide.cs50.io" target=_blank>ide.cs50.io</a> and click “Log in” to access your CS50 IDE. Once your IDE loads, you should see that (by default) it’s divided into three parts. Toward the top of CS50 IDE is your “text editor”, where you’ll write all of your programs. Toward the bottom of is a “terminal window” (light blue, by default), a command-line interface (CLI) that allows you to explore your workspace’s files and directories, compile code, run programs, and even install new software. And on the left is your “file browser”, which shows you all of the files and folders currently in your IDE.
 
 Start by clicking inside your terminal window. You should find that its “prompt” resembles the below.
