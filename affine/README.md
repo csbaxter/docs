@@ -121,3 +121,11 @@ Execute the below, logging in with your GitHub username and password when prompt
 ```
 submit50 csbaxter/problems/2021/x/affine
 ```
+
+## Bonus (not required)
+
+One more thing.  In order to be able to decrypt an affine ciphered text, the `a` and `m` (26) need to be coprime, meaning the largest common factor of those two values is 1.  Therefore, you must choose a number such as `a` = 3, `a` = 5, `a` = 7 and not a number like `a` = 2 (because 2 is a factor of 2 and 26) or `a` = 13  (because 13 is a factor of 13 and 26).  If `a` and `m` are not coprime, then the decryption function below will not work and your message recipient will be left scratching their head:
+
+ D(x)=a<sup>-1</sup>(x-b) mod m
+ 
+As a bonus, implement your program so that it checks that the value of `a` that the user inputs is not coprime to `m`.  Meaning, check that the Greatest Common Factor (GCF) of  `a` and `m` is 1, if it is not reprompt the user for a new value of `a` that is coprime to `m`.
