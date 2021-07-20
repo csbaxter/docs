@@ -66,7 +66,7 @@ Notice that the case of the original message has been preserved. Lowercase lette
 Design and implement a program, affine, that encrypts messages using the Affine cipher.
 
 <ul>
-   <li>Implement your program in a file called affine.c in a directory called affine.</li>
+   <li>Implement your program in a file called <b>affine.c</b> in a directory called <b>affine</b>.</li>
 <li>You need to prompt the user to input an integer value for coefficient `a` (the multiplier) and an integer value for coefficient `b` (the addition shift), but you don’t need to worry if your program eventually breaks if the user chooses an integer value that’s too big or almost too big to fit in an int. (Recall that an int can overflow.)
 <li>Your program must output plaintext: (without a newline) and then prompt the user for a string of plaintext (using get_string).</li>
 <li>Your program must output ciphertext: (without a newline) followed by the plaintext’s corresponding ciphertext, with each alphabetical character changed to its encrypted value by way of the affine cipher formula; non-alphabetical characters should be outputted unchanged.</li>
