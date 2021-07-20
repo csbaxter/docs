@@ -18,6 +18,8 @@ Here's how that would look encrypting the entire English alphabet:
 
 <img src="affine-cipher.jpg" />
 
+Notice how the original value of letters is assigned, we say A = 0, B = 1, C = 3 and so on.  You will need to keep this in mind when implementing your program, because by default the ASCII value for A = 65 and a = 97 🤔
+
 Let's write a program called `affine` that enables you to encrypt messages using the Affine cipher. When the user executes the program you should first prompt them to input a positive integer value for `a` and an integer value for `b`.  If the user inputs 0 or a negative number, reject it and continue to prompt them for a number. Next the user should be prompted for the phrase they want to encrypt, which can include any combination of letters, numbers, punctuation and whitespace.
 
 Here are a few examples of how the program might work. For example, if the user inputs `a` = 5, `b` = 8 and a plaintext of `HELLO`:
@@ -95,7 +97,7 @@ It's okay to edit your own after seeing this pseudocode here, but don't simply c
 Things to keep in mind:
 
 * Recall that ASCII maps all printable characters to numbers.
-* Recall that the ASCII value of `A` is 65. The ASCII value of `a`, meanwhile, is 97.  We need 'A' and 'a' to be zero, 'B' and 'b' to be 1 according to our affine formula.
+* Recall that the ASCII value of `A` is 65. The ASCII value of `a`, meanwhile, is 97.  We need 'A' and 'a' to be zero, 'B' and 'b' to be 1 etc. according to our affine formula.
 * If you're not seeing any output at all when you call `printf`, odds are it's because you're printing characters outside of the valid ASCII range from 0 to 127. Try printing characters as numbers (using `%i` instead of `%c`) at first to see what values you're printing, and make sure you're only ever trying to print valid characters!
 
 ## Testing
