@@ -1,8 +1,7 @@
 # Cash
 
 ## Greedy Algorithms
-
-US coins
+![Image of coins](coins.jpg)
 
 When making change, odds are you want to minimize the number of coins you’re dispensing for each customer, lest you run out (or annoy the customer!). Fortunately, computer science has given cashiers everywhere ways to minimize numbers of coins due: greedy algorithms.
 
@@ -11,8 +10,6 @@ According to the National Institute of Standards and Technology (NIST), a greedy
 What’s all that mean? Well, suppose that a cashier owes a customer some change and in that cashier’s drawer are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢). The problem to be solved is to decide which coins and how many of each to hand to the customer. Think of a “greedy” cashier as one who wants to take the biggest bite out of this problem as possible with each coin they take out of the drawer. For instance, if some customer is owed 41¢, the biggest first (i.e., best immediate, or local) bite that can be taken is 25¢. (That bite is “best” inasmuch as it gets us closer to 0¢ faster than any other coin would.) Note that a bite of this size would whittle what was a 41¢ problem down to a 16¢ problem, since 41 - 25 = 16. That is, the remainder is a similar but smaller problem. Needless to say, another 25¢ bite would be too big (assuming the cashier prefers not to lose money), and so our greedy cashier would move on to a bite of size 10¢, leaving him or her with a 6¢ problem. At that point, greed calls for one 5¢ bite followed by one 1¢ bite, at which point the problem is solved. The customer receives one quarter, one dime, one nickel, and one penny: four coins in total.
 
 It turns out that this greedy approach (i.e., algorithm) is not only locally optimal but also globally so for America’s currency (and also the European Union’s). That is, so long as a cashier has enough of each coin, this largest-to-smallest approach will yield the fewest coins possible. How few? Well, you tell us!
-
-
 
 ## Implementation Details
 
@@ -43,9 +40,7 @@ Implement, in a file called `cash.c` in a `~/pset1/cash` directory, a program th
 
 - Beware the inherent imprecision of floating-point values. Recall `floats.c` from class, wherein, if `x` is `2`, and `y` is `10`, `x / y` is not precisely two tenths! And so, before making change, you’ll probably want to convert the user’s inputted dollars to cents (i.e., from a `float` to an `int`) to avoid tiny errors that might otherwise add up!
 
-- 
-
-  Take care to round your cents to the nearest penny, as with `round`, which is declared in `math.h`. For instance, if `dollars` is a `float` with the user’s input (e.g., `0.20`), then code like
+- Take care to round your cents to the nearest penny, as with `round`, which is declared in `math.h`. For instance, if `dollars` is a `float` with the user’s input (e.g., `0.20`), then code like
 
   ```
   int cents = round(dollars * 100);
@@ -66,13 +61,9 @@ Change owed: 0.41
 4
 ```
 
-
-
 ### Walkthrough
 
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border embed-responsive-item" data-video="" src="https://www.youtube.com/embed/Y3nWGvqt_Cg?modestbranding=0&amp;rel=0&amp;showinfo=0" scrolling="no" id="iFrameResizer0" style="box-sizing: border-box; word-break: break-word; border: 1px solid rgb(222, 226, 230) !important; display: block; height: 480px; margin-bottom: 0px; min-width: 100%; width: 1px; background-color: rgb(0, 0, 0); overflow: hidden;"></iframe>
-
-
 
 ### How to Test Your Code
 
@@ -96,9 +87,7 @@ Execute the below to evaluate the style of your code using `style50`.
 style50 cash.c
 ```
 
-
-
-## [How to Submit](https://cs50.harvard.edu/x/2021/psets/1/cash/#how-to-submit)
+## How to Submit
 
 Execute the below, logging in with your GitHub username and password when prompted. For security, you’ll see asterisks (`*`) instead of the actual characters in your password.
 
