@@ -159,9 +159,6 @@ Modify `readability.c` so that instead of outputting the number of letters, word
 
 If the resulting index number is 16 or higher (equivalent to or greater than a senior undergraduate reading level), your program should output `"Grade 16+"` instead of giving the exact index number. If the index number is less than 1, your program should output `"Before Grade 1"`.
 
-<details style="box-sizing: border-box; word-break: break-word; margin-bottom: 1rem; color: rgb(33, 37, 41); font-family: &quot;PT Sans&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><summary style="box-sizing: border-box; word-break: break-word; display: list-item; cursor: pointer; font-weight: bold;">Hints</summary></details>
-
-
 
 ## Walkthrough
 
