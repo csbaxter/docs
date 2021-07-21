@@ -13,7 +13,7 @@ It turns out that this greedy approach (i.e., algorithm) is not only locally opt
 
 ## Implementation Details
 
-Implement, in a file called `register.c` in a `~/pset1/register` directory, a program that first asks the user how much change is owed and then prints the minimum number of coins with which that change can be made.
+Implement, in a file called `register.c` in a `~/pset1/register` directory, a program that first asks the user how much the item they are purchasing costs, then how much they pay, and then calculates the change and the minimum number of coins with which that change can be made.
 
 - Use
 
@@ -21,7 +21,7 @@ Implement, in a file called `register.c` in a `~/pset1/register` directory, a pr
   get_float
   ```
 
-  to get the user’s input and
+  to get the user’s input for the cost and amount paid and
 
 
   ```plaintext
@@ -30,11 +30,11 @@ Implement, in a file called `register.c` in a `~/pset1/register` directory, a pr
 
   to output your answer. Assume that the only coins available are quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢).
 
-- We ask that you use `get_float` so that you can handle dollars and cents, albeit sans dollar sign. In other words, if some customer is owed $9.75 (as in the case where a newspaper costs 25¢ but the customer pays with a $10 bill), assume that your program’s input will be `9.75` and not `$9.75` or `975`. However, if some customer is owed $9 exactly, assume that your program’s input will be `9.00` or just `9` but, again, not `$9` or `900`. Of course, by nature of floating-point values, your program will likely work with inputs like `9.0` and `9.000` as well; you need not worry about checking whether the user’s input is “formatted” like money should be.
+- We ask that you use `get_float` so that you can handle dollars and cents, albeit sans dollar sign. In other words, if some item costs $9.75 and the customer pays $10.00, the input will be `9.75` for cost `10.00` for paid and the change will be `0.25` which would be `1` coin.
 
 - You need not try to check whether a user’s input is too large to fit in a `float`. Using `get_float` alone will ensure that the user’s input is indeed a floating-point (or integral) value but not that it is non-negative.
 
-- If the user fails to provide a non-negative value, your program should re-prompt the user for a valid amount again and again until the user complies.
+- If the user fails to provide a non-negative value for cost or amount paid, your program should re-prompt the user for a valid amount again and again until the user complies.
 
 - So that we can automate some tests of your code, be sure that your program’s last line of output is only the minimum number of coins possible: an integer followed by `\n`.
 
@@ -51,19 +51,17 @@ Implement, in a file called `register.c` in a `~/pset1/register` directory, a pr
 Your program should behave per the examples below.
 
 ```
-$ ./cash
-Change owed: 0.41
+$ ./register
+Cost of items: 0.59
+Amount Paid: 1
 4
 $ ./cash
-Change owed: -0.41
-Change owed: foo
-Change owed: 0.41
-4
+Cost of items: -1
+Cost of items: foo
+Cost of items: .50
+Amount Paid: 1
+2
 ```
-
-### Walkthrough
-
-<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border embed-responsive-item" data-video="" src="https://www.youtube.com/embed/Y3nWGvqt_Cg?modestbranding=0&amp;rel=0&amp;showinfo=0" scrolling="no" id="iFrameResizer0" style="box-sizing: border-box; word-break: break-word; border: 1px solid rgb(222, 226, 230) !important; display: block; height: 480px; margin-bottom: 0px; min-width: 100%; width: 1px; background-color: rgb(0, 0, 0); overflow: hidden;"></iframe>
 
 ### How to Test Your Code
 
@@ -78,13 +76,13 @@ Does your code work as prescribed when you input
 You can also execute the below to evaluate the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
 
 ```
-check50 csbaxter/problems/2021/x/cash
+check50 csbaxter/problems/2021/x/register
 ```
 
 Execute the below to evaluate the style of your code using `style50`.
 
 ```
-style50 cash.c
+style50 register.c
 ```
 
 ## How to Submit
@@ -92,5 +90,5 @@ style50 cash.c
 Execute the below, logging in with your GitHub username and password when prompted. For security, you’ll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 csbaxter/problems/2021/x/cash
+submit50 csbaxter/problems/2021/x/register
 ```
