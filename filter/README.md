@@ -91,9 +91,7 @@ Note that all of the original pixels of the original image will still be present
 
 ![upside down](upsidedown.bmp)
 
-Similar to Reflection, Upside Down simply moves pixels around to produce an upside down mirror. So any pixels on the left side of the image should end up on the right, and vice versa.
-
-Note that all of the original pixels of the original image will still be present in the reflected image, it’s just that those pixels may have rearranged to be in a different place in the image.
+Similar to Reflection, Upside Down simply moves pixels around to produce an upside down version of the original. So any pixels at the top of the image should end up on the bottom, and vice versa.
 
 
 #### Blur
