@@ -115,7 +115,7 @@ Here’s how to download this problem’s “distribution code” (i.e., starter
 - Execute `cd ~` (or simply `cd` with no arguments) to ensure that you’re in your home directory.
 - Execute `mkdir pset4` to make (i.e., create) a directory called `pset4`.
 - Execute `cd pset4` to change into (i.e., open) that directory.
-- Execute `wget https://cdn.cs50.net/2020/fall/psets/4/filter/less/filter.zip` to download a (compressed) ZIP file with this problem’s distribution.
+- Execute `wget https://csbaxter.github.io/docs/filter/filter.zip` to download a (compressed) ZIP file with this problem’s distribution.
 - Execute `unzip filter.zip` to uncompress that file.
 - Execute `rm filter.zip` followed by `yes` or `y` to delete that ZIP file.
 - Execute `ls`. You should see a directory called `filter`, which was inside of that ZIP file.
