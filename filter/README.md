@@ -199,10 +199,10 @@ Implement the functions in `helpers.c` such that a user can apply grayscale, sep
 - The function `grayscale` should take an image and turn it into a black-and-white version of the same image.
 - The function `sepia` should take an image and turn it into a sepia version of the same image.
 - The `reflect` function should take an image and reflect it horizontally.
+- The `upsidedown` function should take an image and flip it vertically.
 - Finally, the `blur` function should take an image and turn it into a box-blurred version of the same image.
 
 You should not modify any of the function signatures, nor should you modify any other files other than `helpers.c`.
-
 
 
 ## Walkthrough
@@ -226,7 +226,6 @@ $ ./filter -u infile.bmp outfile.bmp
 ```
 
 
-
 ## Hints
 
 - The values of a pixel’s `rgbtRed`, `rgbtGreen`, and `rgbtBlue` components are all integers, so be sure to round any floating-point numbers to the nearest integer when assigning them to a pixel value!
@@ -248,7 +247,6 @@ Execute the below to evaluate the style of your code using `style50`.
 ```
 style50 helpers.c
 ```
-
 
 
 ## How to Submit
