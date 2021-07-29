@@ -1,4 +1,4 @@
-# [Lab 5: Inheritance]
+# Lab 5: Inheritance
 
 Simulate the inheritance of blood types for each member of a family.
 
@@ -13,19 +13,19 @@ Generation 0, blood type OO
         Generation 2, blood type BO
 ```
 
-## [Background]
+## Background
 
 A person’s blood type is determined by two alleles (i.e., different forms of a gene). The three possible alleles are A, B, and O, of which each person has two (possibly the same, possibly different). Each of a child’s parents randomly passes one of their two blood type alleles to their child. The possible blood type combinations, then, are: OO, OA, OB, AO, AA, AB, BO, BA, and BB.
 
 For example, if one parent has blood type AO and the other parent has blood type BB, then the child’s possible blood types would be AB and OB, depending on which allele is received from each parent. Similarly, if one parent has blood type AO and the other OB, then the child’s possible blood types would be AO, OB, AB, and OO.
 
 
-## [Getting Started]
+## Getting Started
 
 Create a new directory in your IDE called `lab5`. In that directory, execute `wget https://cdn.cs50.net/2020/fall/labs/5/inheritance.c` to download the distribution code for this project.
 
 
-## [Understanding]
+## Understanding
 
 Take a look at the distribution code in `inheritance.c`.
 
@@ -37,7 +37,7 @@ The `create_family` and `free_family` functions are left to you to write!
 
 
 
-## [Implementation Details]
+## Implementation Details
 
 Complete the implementation of `inheritance.c`, such that it creates a family of a specified generation size and assigns blood type alleles to each family member. The oldest generation will have alleles assigned randomly to them.
 
@@ -61,11 +61,11 @@ The `free_family` function should accept as input a pointer to a `person`, free 
 - Since this is a recursive function, you should first handle the base case. If the input to the function is `NULL`, then there’s nothing to free, so your function can return immediately.
 - Otherwise, you should recursively `free` both of the person’s parents before `free`ing the child.
 
-### [Walkthrough]
+### Walkthrough
 
 <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="border" data-video="" src="https://video.cs50.io/9p7ddI3ozTY" scrolling="no" id="iFrameResizer0" style="box-sizing: border-box; word-break: break-word; border: 1px solid rgb(222, 226, 230) !important; display: block; height: 701px; margin-bottom: 1rem; min-width: 100%; width: 1px; background-color: rgb(0, 0, 0); color: rgb(33, 37, 41); font-family: &quot;PT Sans&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; overflow: hidden;"></iframe>
 
-### [Hints]
+### Hints
 
 - You might find the `rand()` function useful for randomly assigning alleles. This function returns an integer between `0` and `RAND_MAX`, or `32767`.
 
@@ -79,7 +79,7 @@ The `free_family` function should accept as input a pointer to a `person`, free 
 
 
 
-### [How to Test Your Code]
+### How to Test Your Code
 
 Upon running `./inheritance`, your program should adhere to the rules described in the background. The child should have two alleles, one from each parent. The parents should each have two alleles, one from each of their parents.
 
@@ -113,7 +113,7 @@ style50 inheritance.c
 
 
 
-## [How to Submit]
+## How to Submit
 
 Execute the below, logging in with your GitHub username and password when prompted. For security, you’ll see asterisks (`*`) instead of the actual characters in your password.
 
