@@ -96,7 +96,7 @@ Generation 0, blood type OO
         Generation 2, blood type BO
 ```
 
-<details style="box-sizing: border-box; word-break: break-word; margin-bottom: 1rem; color: rgb(33, 37, 41); font-family: &quot;PT Sans&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><summary style="box-sizing: border-box; word-break: break-word; display: list-item; cursor: pointer; font-weight: bold;">Not sure how to solve?</summary></details>
+###Not sure how to solve?
 <iframe width="618" height="348" src="https://www.youtube.com/embed/H7LULatPwcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Execute the below to evaluate the correctness of your code using `check50`. But be sure to compile and test it yourself as well!
